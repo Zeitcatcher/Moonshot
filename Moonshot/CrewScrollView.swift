@@ -8,11 +8,6 @@
 import SwiftUI
 
 struct CrewScrollView: View {
-//    struct CrewMember {
-//        let role: String
-//        let astronaut: Astronaut
-//    }
-    
     let crew: [MissionView.CrewMember]
     
     var body: some View {
