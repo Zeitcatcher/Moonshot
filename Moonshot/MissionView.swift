@@ -19,12 +19,17 @@ struct MissionView: View {
     var body: some View {
         ScrollView {
             VStack {
-                Image(mission.image)
-                    .resizable()
-                    .scaledToFit()
-                    .containerRelativeFrame(.horizontal) { width, axis in
-                        width * 0.6
-                    }
+                VStack {
+                    Image(mission.image)
+                        .resizable()
+                        .scaledToFit()
+                        .containerRelativeFrame(.horizontal) { width, axis in
+                            width * 0.6
+                        }
+                    
+                    Text(mission.formattedLaunchDate)
+                        .padding(.top)
+                }
                 
                 Rectangle()
                     .frame(height: 2)
@@ -53,7 +58,7 @@ struct MissionView: View {
                     HStack {
                         ForEach(crew, id:\.role) { crewMember in
                             NavigationLink {
-                                Text("Astronaut details")
+                                AstronautView(astronaut: crewMember.astronaut)
                             } label: {
                                 HStack {
                                     Image(crewMember.astronaut.id)
@@ -103,6 +108,6 @@ struct MissionView: View {
     let missions: [Mission] = Bundle.main.decode("missions.json")
     let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
     
-    return MissionView(mission: missions[0], astronauts: astronauts)
+    return MissionView(mission: missions[5], astronauts: astronauts)
         .preferredColorScheme(.dark)
 }
