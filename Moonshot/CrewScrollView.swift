@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct CrewScrollView: View {
-    struct CrewMember {
-        let role: String
-        let astronaut: Astronaut
-    }
+//    struct CrewMember {
+//        let role: String
+//        let astronaut: Astronaut
+//    }
     
-    let crew: [CrewMember]
+    let crew: [MissionView.CrewMember]
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
@@ -50,11 +50,5 @@ struct CrewScrollView: View {
 }
 
 #Preview {
-    let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
-    let crew = [
-        CrewScrollView.CrewMember(role: "Commander", astronaut: astronauts["astronaut1"]!),
-        CrewScrollView.CrewMember(role: "Pilot", astronaut: astronauts["astronaut2"]!)
-    ]
-    
-    return CrewScrollView(crew: crew)
+    CrewScrollView(crew: [])
 }
