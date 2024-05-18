@@ -19,6 +19,7 @@
 		D95E4B5D2BF5C03F00183451 /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95E4B5C2BF5C03F00183451 /* Color-Theme.swift */; };
 		D95E4B612BF5C70800183451 /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95E4B602BF5C70800183451 /* MissionView.swift */; };
 		D95E4B632BF7101400183451 /* AstronautView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95E4B622BF7101400183451 /* AstronautView.swift */; };
+		D95E4B652BF83D7300183451 /* CrewScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95E4B642BF83D7300183451 /* CrewScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		D95E4B5C2BF5C03F00183451 /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
 		D95E4B602BF5C70800183451 /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
 		D95E4B622BF7101400183451 /* AstronautView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautView.swift; sourceTree = "<group>"; };
+		D95E4B642BF83D7300183451 /* CrewScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				D95E4B442BF436FA00183451 /* MoonshotApp.swift */,
 				D95E4B462BF436FA00183451 /* ContentView.swift */,
 				D95E4B602BF5C70800183451 /* MissionView.swift */,
+				D95E4B642BF83D7300183451 /* CrewScrollView.swift */,
 				D95E4B622BF7101400183451 /* AstronautView.swift */,
 				D95E4B5C2BF5C03F00183451 /* Color-Theme.swift */,
 				D95E4B562BF468B200183451 /* Astronaut.swift */,
@@ -169,6 +172,7 @@
 				D95E4B5D2BF5C03F00183451 /* Color-Theme.swift in Sources */,
 				D95E4B472BF436FA00183451 /* ContentView.swift in Sources */,
 				D95E4B452BF436FA00183451 /* MoonshotApp.swift in Sources */,
+				D95E4B652BF83D7300183451 /* CrewScrollView.swift in Sources */,
 				D95E4B5B2BF46CAB00183451 /* Mission.swift in Sources */,
 				D95E4B592BF4690100183451 /* Bundle-Decodable.swift in Sources */,
 			);

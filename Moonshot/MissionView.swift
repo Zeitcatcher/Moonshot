@@ -27,8 +27,10 @@ struct MissionView: View {
                             width * 0.6
                         }
                     
-                    Text(mission.formattedLaunchDate)
-                        .padding(.top)
+                    if let date = mission.launchDate {
+                        Label(date.formatted(date: .complete, time: .omitted), systemImage: "calendar")
+                            .padding(.top)
+                    }
                 }
                 
                 Rectangle()
